@@ -12,6 +12,7 @@ body {
     font-size: 16px;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: var(--dark-blue);
 }
 
 h1 {
@@ -294,7 +295,7 @@ footer {
 }
 
 /* screensize  */
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 956px) {
     aside{
         display:none;
     }
@@ -305,6 +306,7 @@ footer {
 
     main {
         flex-direction: column;
+        justify-content: center;
     }
 
     header {
@@ -314,22 +316,32 @@ footer {
 
     header h1 {
         min-width: 700px;
-        padding-left: 350px;
+        padding-left: 175px;
 
     }
 
     .storycard img {
-        margin: 20px 0 0 200px;
+        margin: 20px 0 0 90px;
     }
     
     .storycard p {
-        margin: 0 0 20px 150px;
+        margin: 0 0 20px 20px;
     }
 
-}
-
-@media screen and (max-width: 992px) {
-    aside{
-        display:none;
+    .mediumcard {
+        min-width: 125px;
+        overflow: visible;
     }
+
+    .mediumcard img {
+        max-width: 125px;
+    }
+
+    .artmediums h1 {
+        margin:20px 0 0 0;
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+
 }
