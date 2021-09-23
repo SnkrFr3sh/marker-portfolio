@@ -42,7 +42,7 @@ header {
 
 header h1 {
     text-align: left;
-    padding: 20px 30px 30px 150px;
+    padding: 30px 30px 30px 150px;
     margin:0;
     min-width: 400px;
 }
@@ -177,7 +177,7 @@ img{
 }
 
 .samples :hover {
-    min-width: 325px;
+    min-width: 352px;
 
 }
 
@@ -277,7 +277,7 @@ footer {
 
 .mediumcard {
     min-width: 300px;
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 .mediumcard img {
@@ -316,12 +316,12 @@ footer {
 
     header h1 {
         min-width: 700px;
-        padding-left: 175px;
+        padding-left: 90px;
 
     }
 
     .storycard img {
-        margin: 20px 0 0 90px;
+        margin: 20px 0 0 45px;
     }
     
     .storycard p {
@@ -343,5 +343,56 @@ footer {
         padding: 10px;
         border-radius: 10px 10px 0 0;
     }
+    
+    header nav h2 a:hover {
+        color: var(--cream);
+        background-color: var(--dark-blue);
+        padding: 20px 20px 9px 20px;
+        font-weight: bolder;
+        border-radius: 10px 10px 0 0;
+    }
 
+    nav h2 {
+        font-size: .70em;
+    }
+
+    .projects {
+        flex:1;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        justify-content: center;
+    
+    }
+    
+    .samples {
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 10px;
+        flex: 0 0 40px;
+        margin:20px 0 0 0;
+    }
+    
+    .samples h2 {
+        border-radius: 10px 10px 0px 0px;
+        padding:15px;
+        background-color: var(--grey);
+        color: var(--dark-yellow);
+        text-align: center;
+    }
+    
+    .samples p {
+        border-radius: 0px 0px 10px 10px;
+        padding:15px;
+        background-color: var(--dark-yellow);
+        color: var(--dark-brown);
+        margin: 0px 0px 50px 0;
+    
+    
+    }
+    
+    .samples :hover {
+        min-width: 350px;
+    
+    }
 }
