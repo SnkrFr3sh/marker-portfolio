@@ -73,7 +73,7 @@ header nav h2 a:hover {
 
 /* main section styles */
 main {
-    padding: 90px 0px;
+    padding: 0px 0px;
     background-color: var(--dark-blue);
 }
 
@@ -136,6 +136,7 @@ aside ul li a:hover {
 
 img{
     max-width: 200px;
+
 }
 
 
@@ -146,7 +147,7 @@ img{
     flex:1;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
 
 }
 
@@ -168,10 +169,12 @@ img{
 
 .samples p {
     border-radius: 0px 0px 10px 10px;
-    padding:15px;
+    padding:10px 10px 15px 25px;
     background-color: var(--dark-yellow);
     color: var(--dark-brown);
     margin: 0px 0px 50px 0;
+    font-size: 15px;
+    font-weight: bold;
 
 
 }
@@ -294,8 +297,133 @@ footer {
     z-index:999;
 }
 
-/* screensize  */
-@media screen and (max-width: 956px) {
+/* screensize tablet */
+@media screen and (max-width: 1080px) {
+
+    section {
+        margin: 20px;
+    }
+
+    
+    img{
+        max-width: 200px;
+    
+    }
+    
+    .aboutme {
+        max-width: 600px;
+        min-width: 600px;
+        justify-content: center;
+    }
+
+    main{
+        padding: 90px 0 0 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #maincontent {
+        margin: 20px 20px 20px 200px;
+    }
+
+    header {
+        background: var(--grey);
+        position: relative;
+    }
+
+    header h1 {
+        min-width: 700px;
+        padding-left: 300px;
+        max-width: 725px;
+
+    }
+
+    .storycards {
+        max-width: 600px;
+    }
+    .storycard img {
+        margin: 20px 0 0 0px;
+    }
+
+    .storycard p {
+        margin: 20px;
+        padding: 0;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .mediumcard {
+        min-width: 125px;
+        overflow: visible;
+    }
+
+    .mediumcard img {
+        max-width: 125px;
+    }
+
+    .artmedium {
+        max-width: 450px;
+    }
+    .artmediums h1 {
+        margin:20px 0 0 0;
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    header nav h2 a:hover {
+        color: var(--cream);
+        background-color: var(--dark-blue);
+        padding: 20px 20px 9px 20px;
+        font-weight: bolder;
+        border-radius: 10px 10px 0 0;
+    }
+
+    nav h2 {
+        font-size: .70em;
+    }
+
+    .projects {
+        flex:1;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+    
+    }
+    
+    .samples {
+        border-style: solid;
+        border-width: 0px;
+        border-radius: 10px;
+        flex: 0 0 40px;
+    }
+    
+    .samples h2 {
+        border-radius: 10px 10px 0px 0px;
+        padding:15px;
+        background-color: var(--grey);
+        color: var(--dark-yellow);
+        text-align: center;
+    }
+    
+    .samples p {
+        border-radius: 0px 0px 10px 10px;
+        padding:15px;
+        background-color: var(--dark-yellow);
+        color: var(--dark-brown);
+        margin: 0px 0px 50px 0;
+    
+    
+    }
+    
+    .samples :hover {
+        min-width: 350px;
+    
+    }
+}
+
+/* screensize phone */
+@media screen and (max-width: 640px) {
     aside{
         display:none;
     }
@@ -304,14 +432,38 @@ footer {
         margin: 20px;
     }
 
+    section article {
+        margin: 40px 20px 20px 0;
+    }
+
     main {
         flex-direction: column;
         justify-content: center;
     }
 
+    #maincontent {
+        margin: 20px;
+    
+    }
+
+    .aboutme {
+        max-width: 450px;
+        min-width: 450px;
+        justify-content: center;
+    }
+
+
     header {
         background: var(--grey);
         position: fixed;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    header nav a{
+        padding: 10px;
     }
 
     header h1 {
@@ -321,11 +473,12 @@ footer {
     }
 
     .storycard img {
-        margin: 20px 0 0 45px;
+        margin: 20px 0 0 0px;
     }
     
     .storycard p {
-        margin: 0 0 20px 20px;
+        margin: 0px 0 20px 0px;
+        padding: 0 20px 0 20px;
     }
 
     .mediumcard {
@@ -360,8 +513,10 @@ footer {
         flex:1;
         display: flex;
         flex-wrap: wrap;
-        padding: 0px;
+        padding: 20px;
         justify-content: center;
+        max-width: 250px;
+        margin-left: 120px;
     
     }
     
@@ -370,7 +525,6 @@ footer {
         border-width: 0px;
         border-radius: 10px;
         flex: 0 0 40px;
-        margin:20px 0 0 0;
     }
     
     .samples h2 {
