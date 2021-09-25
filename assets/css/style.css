@@ -179,6 +179,8 @@ img{
 
 }
 
+
+
 .samples :hover {
     min-width: 352px;
 
@@ -406,6 +408,7 @@ footer {
         text-align: center;
     }
     
+
     .samples p {
         border-radius: 0px 0px 10px 10px;
         padding:15px;
@@ -446,11 +449,15 @@ footer {
     
     }
 
-    .aboutme {
+    .artmedium {
+        max-width: 450px;
+    }
+
+    /* .aboutme {
         max-width: 450px;
         min-width: 450px;
         justify-content: center;
-    }
+    } */
 
 
     header {
