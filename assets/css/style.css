@@ -23,7 +23,10 @@ h1 {
     position:relative;
 }
 
-
+a{
+ color: var(--cream);
+ text-decoration: none;
+}
 
 /* Header styles */
 header {
@@ -73,7 +76,7 @@ header nav h2 a:hover {
 
 /* main section styles */
 main {
-    padding: 0px 0px;
+    padding: 20px 0px 0px;
     background-color: var(--dark-blue);
 }
 
@@ -137,6 +140,8 @@ aside ul li a:hover {
 img{
     max-width: 200px;
 
+
+
 }
 
 
@@ -182,7 +187,7 @@ img{
 
 
 .samples :hover {
-    min-width: 352px;
+    min-width: 250px;
 
 }
 
@@ -319,7 +324,7 @@ footer {
     }
 
     main{
-        padding: 90px 0 0 0;
+        padding: 20px 0 0 0;
         flex-direction: column;
         justify-content: center;
     }
@@ -420,7 +425,7 @@ footer {
     }
     
     .samples :hover {
-        min-width: 350px;
+        /* min-width: 350px; */
     
     }
 }
@@ -553,7 +558,7 @@ footer {
     }
     
     .samples :hover {
-        min-width: 350px;
+        min-width: 25px;
     
     }
 }
