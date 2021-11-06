@@ -424,11 +424,11 @@ footer {
     
     }
     
-    .samples :hover {
+    /* .samples :hover {
         /* min-width: 350px; */
     
-    }
-}
+    /* } */
+} 
 
 /* screensize phone */
 @media screen and (max-width: 640px) {
