@@ -5,9 +5,7 @@ Title: Marker's Portfolio
 
 https://snkrfr3sh.github.io/marker-portfolio/
 
-Technologies Used:
-  -HTML
-  -CSS
+Technologies Used: HTML, CSS
  
 License: MIT 
 
